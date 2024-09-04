@@ -1,0 +1,8 @@
+services:
+  web:
+    image: aauno/web:latest
+    container_name: web
+    ports:
+      - "9998:80"
+      - "9999:443"
+    restart: unless-stopped
